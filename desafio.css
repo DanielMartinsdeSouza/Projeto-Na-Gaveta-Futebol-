@@ -1,0 +1,116 @@
+header{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+.foto {
+    text-align: center;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;         /* Preenche sem distorcer */
+  display: block;            /* Para permitir centralização com margin */
+  margin: 20px auto;/* Centraliza horizontalmente */
+  margin-bottom: 40;
+  border-radius: 10px;       /* Opcional: bordas arredondadas */
+  box-shadow: 0 0 10px #ccc; /* Opcional: sombra suave */
+}
+.centralizacao{
+    display: flex;
+  justify-content: center;  /* Centraliza horizontalmente */
+  flex-wrap: wrap;          /* Quebra linha se a tela for pequena */
+  gap: 10px;
+}
+.centraliza {
+  text-align: center;
+  background-color: white;
+  font: 200;
+  margin: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 18px;
+  background-color: black;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+#menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+#side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px; /* começa escondido */
+  width: 200px;
+  height: 100%;
+  margin: auto;
+  background-color: #000000;
+  color: #fffdfd;
+  display: flex;
+  flex-direction:column-reverse;
+  padding: 0px;
+  gap: 10px;
+  transition: left 0.3s ease;
+  z-index: 999;
+}
+#side-menu.active {
+  left: 0; /* aparece */
+}
+#side-menu a {
+  color: white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+main{
+  padding-top: 100px;
+  margin: 5px;
+}
+strong,h1{
+  margin: 5px;
+}
+body, html{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+a{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 15px;
+}
+div{
+  margin: 10px;
+}
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+}
+ #menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+  }
+.Título{
+  text-align: center;
+}
+h1{
+  text-align: center;
+  font-family:"Roboto";
+}
+footer{
+  background-color:#61819c;
+  color:white;
+  text-align:center;
+  width:auto;
+  margin: auto;
+  padding: 1px;
+}
