@@ -6,17 +6,17 @@ header{
     text-align: center;
   width: 500px;
   height: 500px;
-  object-fit: cover;         /* Preenche sem distorcer */
-  display: block;            /* Para permitir centralização com margin */
-  margin: 20px auto;/* Centraliza horizontalmente */
+  object-fit: cover;         
+  display: block;            
+  margin: 20px auto;
   margin-bottom: 40;
-  border-radius: 10px;       /* Opcional: bordas arredondadas */
-  box-shadow: 0 0 10px #ccc; /* Opcional: sombra suave */
+  border-radius: 10px;     
+  box-shadow: 0 0 10px #ccc; 
 }
 .centralizacao{
     display: flex;
-  justify-content: center;  /* Centraliza horizontalmente */
-  flex-wrap: wrap;          /* Quebra linha se a tela for pequena */
+  justify-content: center;  
+  flex-wrap: wrap;       
   gap: 10px;
 }
 .centraliza {
@@ -47,7 +47,7 @@ header{
 #side-menu {
   position: fixed;
   top: 0;
-  left: -250px; /* começa escondido */
+  left: -250px;
   width: 200px;
   height: 100%;
   margin: auto;
@@ -61,7 +61,7 @@ header{
   z-index: 999;
 }
 #side-menu.active {
-  left: 0; /* aparece */
+  left: 0; 
 }
 #side-menu a {
   color: white;
@@ -85,7 +85,7 @@ body, html{
 }
 a{
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   margin: 15px;
 }
 div{
