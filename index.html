@@ -4,29 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Os gringos são melhores?</title>
-</head meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
- <!-- CSS do Bootstrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<head>
+<!-- Favicon -->
+  <link rel="shortcut icon" href="imagens/jogador-de-futebol.png" type="image/x-icon">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<link rel="shortcut icon" href="imagens/jogador-de-futebol.png" type="image/x-icon">
-
-
 <body>
-      <nav class="menu">
-  <i id="menu-icon" class="bi bi-list"></i>
-  <h1>Na Gaveta</h1>
-</nav>
-        <div id="side-menu">
-        <a href="https://github.com/DanielMartinsdeSouza" style="margin-top: auto; target="_blank">GitHub <i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/daniel-souza-02aba0266/" target="_blank">Linkdin <i class="bi bi-linkedin"></i></a>
-        <a href="https://mail.google.com/mail/?view=cm&to=danielmartins1928@outlook.com " target="_blank">G-mail <i class="bi bi-google"></i></a>
-        <a href="https://www.instagram.com/daniel_souzsa/" target="_blank">Instagram <i class="bi bi-instagram"></i></a>
-</div>
-    </nav>      
+  <!-- Menu Principal -->
+  <nav class="menu">
+    <i id="menu-icon" class="bi bi-list"></i>
+    <h1>Na Gaveta</h1>
+  </nav>
+
+  <!-- Menu Lateral -->
+  <div id="side-menu">
+    <a href="https://github.com/DanielMartinsdeSouza" target="_blank">
+      GitHub <i class="bi bi-github"></i></i>
+    </a>
+    <a href="https://www.linkedin.com/in/daniel-souza-02aba0266/" target="_blank">
+      LinkedIn <i class="bi bi-linkedin"></i>
+    </a>
+    <a href="https://mail.google.com/mail/?view=cm&to=danielmartins1928@outlook.com" target="_blank">
+      G-mail <i class="bi bi-google"></i>
+    </a>
+    <a href="https://www.instagram.com/daniel_souzsa/" target="_blank">
+      Instagram <i class="bi bi-instagram"></i>
+    </a>
+  </div>
     <main>
        <header>
       <h1><i class="título"></i><strong>Técnico Brasileiro: Em Extinção ?</strong></h1>
@@ -161,7 +175,7 @@ Outro fator importante é a questão das oportunidades. O mercado brasileiro ain
 Em termos de relevância no futebol global, o treinador brasileiro ainda não conseguiu alcançar o mesmo destaque e prestígio de países como Portugal, Espanha, Alemanha ou Argentina, onde técnicos são valorizados e exportados com frequência para as principais ligas do mundo. Embora existam exceções notórias, como Luiz Felipe Scolari e Carlos Alberto Parreira, que conquistaram a Copa do Mundo e tiveram carreiras de sucesso internacional, esses casos são raros e muitas vezes não refletem uma continuidade ou sistema estruturado de formação no Brasil.
 
 Hoje, a valorização da ciência do esporte, do uso de dados e da inovação tática já fazem parte da rotina dos clubes de ponta no Brasil, e a expectativa é que os treinadores nacionais possam se adaptar a essa nova realidade. A busca por atualização, participação em cursos internacionais, o contato com profissionais estrangeiros e a incorporação de tecnologias são caminhos fundamentais para que o treinador brasileiro recupere seu espaço de protagonismo, tanto no cenário nacional quanto no global. Em suma, apesar dos avanços recentes, a formação do treinador brasileiro ainda precisa de melhorias estruturais, maior investimento em capacitação e oportunidades para que o profissional se desenvolva plenamente em um mercado cada vez mais competitivo e globalizado.</p>
-                   <img src="imagens/Formação De Treinadores.jpg" alt="tite">
+                   <img src="imagens/Formação De Treinadores.jpg" alt="tite" class="foto">
 
              <div>
                  <p class="titulo"><strong>Carlo Ancelotti na Seleção – </strong>Um gringo no comando do Brasil</p>
@@ -203,25 +217,45 @@ Hoje, a valorização da ciência do esporte, do uso de dados e da inovação t�
     </a>
     </p>
     </footer>
-    <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const menuIcon = document.getElementById("menu-icon");
-    const sideMenu = document.getElementById("side-menu");
-
-    menuIcon.addEventListener("click", function () {
-      sideMenu.classList.toggle("active");
-
-      // Muda o ícone entre 'list' e 'x'
-      if (menuIcon.classList.contains("bi-list")) {
-        menuIcon.classList.remove("bi-list");
-        menuIcon.classList.add("bi-x");
-      } else {
-        menuIcon.classList.remove("bi-x");
-        menuIcon.classList.add("bi-list");
-      }
-    });
-  });
-</script>
-
 </body>
 </html>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const menuIcon = document.getElementById("menu-icon");
+  const sideMenu = document.getElementById("side-menu");
+  const body = document.body;
+
+  // Função para atualizar o ícone conforme o estado do menu
+  function updateIcon(isMenuActive) {
+    if (isMenuActive) {
+      menuIcon.classList.remove("bi-list");
+      menuIcon.classList.add("bi-x");
+    } else {
+      menuIcon.classList.remove("bi-x");
+      menuIcon.classList.add("bi-list");
+    }
+  }
+
+  // Clica no ícone para abrir/fechar menu
+  menuIcon.addEventListener("click", function (event) {
+    event.stopPropagation(); // previne fechar imediatamente
+    const isActive = sideMenu.classList.toggle("active");
+    body.classList.toggle("menu-ativo", isActive);
+
+    updateIcon(isActive);
+  });
+
+  // Clica fora do menu para fechar
+  document.addEventListener("click", function (event) {
+    if (
+      sideMenu.classList.contains("active") &&
+      !sideMenu.contains(event.target) &&
+      event.target !== menuIcon
+    ) {
+      sideMenu.classList.remove("active");
+      body.classList.remove("menu-ativo");
+      updateIcon(false);
+    }
+  });
+});
+</script>
