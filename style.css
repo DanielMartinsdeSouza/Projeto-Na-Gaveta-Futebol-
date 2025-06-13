@@ -11,6 +11,9 @@ html, body {
   background-color: #000;       /* Fundo escuro */
   color: #fff;                  /* Texto branco */
 }
+ol{
+  padding: 2%;
+}
 
 /* ========== CABEÇALHO FIXO ========== */
 .menu {
